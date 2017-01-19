@@ -1,28 +1,20 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+  <div id="app" class="container">
+    <kepala></kepala>
+    <div class="row">
+      <leftmenu></leftmenu>
+    </div>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Kepala from './components/Kepala'
+import Leftmenu from './components/Leftmenu'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Kepala, Leftmenu
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
