@@ -2,20 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>webvue</title>
+    <title>CMS</title>
     <link href="./static/bootsrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="./static/bootsrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="./static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./static/css/custom.css" rel="stylesheet">
   </head>
-  <body>
-    <div id="app">
-      <div class="container">
+  
+  <body class="nav-md">
+    <div class="container body">
+      <div id="app" class="main_container">
+        <leftmenu></leftmenu>
         <kepala v-bind:my-title="title" v-bind:my-desc="description"></kepala>
-        <div class="row">
-          <leftmenu></leftmenu>
-          <router-view></router-view>
-        </div>
+        <router-view></router-view>
       </div>
     </div>
-    <!-- built files will be auto injected -->
   </body>
 </html>
